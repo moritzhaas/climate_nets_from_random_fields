@@ -47,7 +47,7 @@ Fig 1:
 - Visualise Matern IGRFs and sample paths: `igrf_visualisation.py`
 
 Fig 2:
-- Networks from lognormal data: exp_nets.py, previously: `plot_corr_to_deg.py`
+- Networks from lognormal data: `exp_nets.py`
 
 Fig 3:
 - FDR: `compute_fdr_parallel.py`
