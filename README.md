@@ -96,8 +96,8 @@ Fig 15:
 
 Fig 16:
 - Resampling statistics (not geomodel): `resampling_sim.py`
-- Geomodel2 adjacencies: `resampling_sim_geomodel.py`
-- Compute graph statistics from geomodel 2 adjacency: `georesampling_finish.py`
+- Geomodel 2 adjacencies: `resampling_sim_geomodel.py`
+- Compute graph statistics from Geomodel 2 adjacency: `georesampling_finish.py`
 - Plot statistics of resampled networks: `plot_resampling.py`
 
 
