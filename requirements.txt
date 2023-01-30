@@ -1,0 +1,13 @@
+Cartopy==0.20.2
+imageio==2.11.1
+matplotlib==3.3.4
+networkx==2.5.1
+numba==0.53.1
+numpy==1.20.3
+plotly==4.14.3
+scikit_learn==1.2.1
+scipy==1.8.0
+statsmodels==0.13.1
+tqdm==4.64.0
+tueplots==0.0.3
+xarray==0.18.1
