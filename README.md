@@ -109,3 +109,8 @@ Fig 16:
 
 
 - Initialise all common variables (gets called in scripts): `grid_helper.py`
+
+
+## Contact
+
+If you have troubles running some of the experiments do not hesitate to get in touch.
