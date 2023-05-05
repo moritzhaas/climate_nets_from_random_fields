@@ -1,6 +1,6 @@
 # Construct and Evaluate Climate Networks from Simulated Random Fields and ERA5 Data
 
-This repository accompanies the paper “Pitfalls of Climate Network Construction - A Statistical Perspective” accepted at Journal of Climate, available on [arXiv](https://arxiv.org/pdf/2211.02888.pdf). It is based on the [climnet](https://github.com/mlcs/climnet) repository.
+This repository accompanies the paper “Pitfalls of Climate Network Construction - A Statistical Perspective” accepted at Journal of Climate, available [here]([https://journals.ametsoc.org/view/journals/clim/36/10/JCLI-D-22-0549.1.xml]). It is based on the [climnet](https://github.com/mlcs/climnet) repository.
 
 ## Installation
 
