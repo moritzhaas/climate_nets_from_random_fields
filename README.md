@@ -114,3 +114,23 @@ Fig 16:
 ## Contact
 
 If you have troubles running some of the experiments do not hesitate to get in touch.
+
+## Citation
+
+If you use this software please cite the following publication:
+
+```bib
+@article {PitfallsofClimateNetworkConstructionAStatisticalPerspective,
+      author = "Moritz Haas and Bedartha Goswami and Ulrike von Luxburg",
+      title = "Pitfalls of Climate Network Construction—A Statistical Perspective",
+      journal = "Journal of Climate",
+      year = "2023",
+      publisher = "American Meteorological Society",
+      address = "Boston MA, USA",
+      volume = "36",
+      number = "10",
+      doi = "https://doi.org/10.1175/JCLI-D-22-0549.1",
+      pages=      "3321 - 3342",
+      url = "https://journals.ametsoc.org/view/journals/clim/36/10/JCLI-D-22-0549.1.xml"
+}
+```
