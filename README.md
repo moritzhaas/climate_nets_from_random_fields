@@ -120,7 +120,7 @@ If you have troubles running some of the experiments do not hesitate to get in t
 If you use this software please cite the following publication:
 
 ```bib
-@article {PitfallsofClimateNetworkConstructionAStatisticalPerspective,
+@article{PitfallsofClimateNetworkConstructionAStatisticalPerspective,
       author = "Moritz Haas and Bedartha Goswami and Ulrike von Luxburg",
       title = "Pitfalls of Climate Network Construction—A Statistical Perspective",
       journal = "Journal of Climate",
