@@ -11,6 +11,36 @@ Install all packages in `requirements.txt`.
 Download this repository, move to the `climnet` directory and run `pip install -e .` to install your local version of the climnet package.
 
 
+## Generating time series from an isotropic random field
+
+If you want to generate time series from an isotropic Gaussian random field on a fixed grid, you can simply do the following:
+
+```
+import numpy as np
+from climnet.myutils import *
+from climnet.grid import FeketeGrid
+from sklearn.gaussian_process.kernels import Matern
+
+# generate the grid of your choice
+grid = FeketeGrid(num_points = 1000)
+# lon, lat are 1-dimensional arrays containing the coordinates of the grid points
+lon, lat = grid.grid['lon'], grid.grid['lat']
+# represent the grid in 3D space
+cartesian_grid = spherical2cartesian(lon,lat)
+
+# specify the lag-1 autocorrelation all grid points (here high lag-1 autocorrelation of 0.9)
+ar_coeff = 0.9 * np.ones(1000)
+
+# compute the covariance matrix on the grid based on the used kernel (here chordal Matern covariance)
+kernel = 1.0 * Matern(length_scale=0.2, nu=1.5)
+cov = kernel(cartesian_grid)
+
+# sample time series from the isotropic Gaussian random field on the defined grid with the specified lag-1 autocorrelations
+# data is an np.array of shape (n_time, num_gridpoints)
+np.random.seed(18360)
+data = diag_var_process(ar_coeff, cov, n_time=365)
+```
+
 ## Introduction
 
 The pipeline for any experiment is:
@@ -25,7 +55,6 @@ Many scripts use a SLURM job array, where each job corresponds to an independent
 After using a job array, run `compose_stats.py` to compose the stats computed in each run to a single file.
 
 Before plotting, calculate network statistics of ground truth networks: `calc_true_pre.py`
-
 
 ## Reproducing the Experiments
 
