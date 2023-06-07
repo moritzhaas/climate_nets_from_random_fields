@@ -15,7 +15,7 @@ Download this repository, move to the `climnet` directory and run `pip install -
 
 If you want to generate time series from an isotropic Gaussian random field on a fixed grid, you can simply do the following:
 
-```
+```Python
 import numpy as np
 from climnet.myutils import *
 from climnet.grid import FeketeGrid
