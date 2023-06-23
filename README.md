@@ -10,6 +10,8 @@ Install all packages in `requirements.txt`.
 
 Download this repository, move to the `climnet` directory and run `pip install -e .` to install your local version of the climnet package.
 
+During this installation the Cartopy package tends to cause issues. Instead of installing the climnet package, you can also just copy the scripts you need.
+
 
 ## Generating time series from an isotropic random field
 
